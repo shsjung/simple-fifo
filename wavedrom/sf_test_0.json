@@ -1,0 +1,10 @@
+{signal: [
+  {name: 'fCLK'  , wave: 'p.............'},
+  {name: 'fPUSH' , wave: '0101.0...10...'},
+  {name: 'fPOP'  , wave: '0...1......0..'},
+  {name: 'fD'    , wave: 'x3x33x...3x...', data: ['D1', 'D2', 'D3', 'D4']},
+  {name: 'fQ'    , wave: 'x....555xx5x..', data: ['D1', 'D2', 'D3', 'D4']},
+  {name: 'fVALID', wave: '0....1..0.10..'},
+  {name: 'fEMPTY', wave: '1.0....1..0.10'},
+  {name: 'fFULL' , wave: '0.............'},
+]}
