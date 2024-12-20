@@ -2,14 +2,14 @@
 
 FIFO (First-In, First-Out) buffers are widely used in hardware design. Depending on whether the input clock and output clock are the same, FIFOs are classified as either synchronous or asynchronous. Synchronous FIFOs are simpler in structure since they do not require clock domain crossing. This makes them easier to develop and applicable to various applications.
 
-In this project, a simple synchronous FIFO that includes a two-port synchronous RAM is implemented. The two-port synchronous RAM model is based on an existing design available on GitHub.
+In this project, a simple synchronous FIFO that includes a two-port synchronous RAM is implemented. The two-port synchronous RAM model is based on an existing design available on [this repository](https://github.com/shsjung/memory-model).
 
 ## File Structure
 
 - `rtl/`
   - `ram_two_sync.sv`: Single-port RAM
-  - `sf_interface.sv`
-  - `sf_top.sv`
+  - `sf_interface.sv`: Simple FIFO interface
+  - `sf_top.sv`: Top module that instantiates the memory model and FIFO interface
 - `wavedrom/`: Waveform diagrams
 - `obj_dir/`: Directory containing object files and executables generated during Verilator simulation
 - `tb.cpp`: Testbench top-level file
