@@ -35,7 +35,11 @@ The provided testbench is designed for simulation using Verilator. Ensure Verila
 
 ## Example Waveforms
 
+Here is an example waveform of this simple FIFO.
+
 ![Simple FIFO Waveform](https://svg.wavedrom.com/github/shsjung/simple-fifo/main/wavedrom/sf_test_0.json)
+
+Note that the fPOP signal does not operate during the fourth, fifth, and seventh cycles because the FIFO was empty.
 
 ## License
 
